@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<form action="http://24h.com.vn" target="_new">
+	<h2 align="center">Đăng ký thành viên</h2>
+    <h3>Thông tin cá nhân</h3>
+    <table width="70%" border="0">
+  <tr>
+    <td width="33%" align="right">Tên:</td>
+    <td width="67%"><input type="text" required placeholder="Ho va Ten" > </td>
+  </tr>
+  <tr>
+    <td align="right">Giới tính:</td>
+    <td><input type="radio" name="gioitinh" checked="checked">Nam 
+    	<input type="radio" name="gioitinh">Nữ
+    </td>
+  </tr>
+  <tr>
+    <td align="right">Quốc tịch:</td>
+    <td>
+    	<select name="select">
+        	<option>Viet Nam</option>
+            <option>China</option>
+            <option>Japan</option>
+            <option>Others</option>
+        </select>
+    </td>
+  </tr>
+  <tr>
+    <td align="right">Email:</td>
+    <td><input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"></td>
+    <!--Một biểu mẫu có trường email phải theo thứ tự sau: characters@characters.domain (ký tự theo sau là ký hiệu @, sau đó là nhiều ký tự hơn, sau đó là dấu ".". Sau dấu ".", Bạn chỉ có thể viết 2 đến 3 ký tự từ a đến z:-->
+  </tr>
+  <tr>
+    <td align="right">Điện thoại</td>
+    <td><input type="number" pattern="[0-9]{10,11}"></td>
+  </tr>
+  <tr>
+    <td align="right">Ghi chú</td>
+    <td><textarea name="ghichu" cols="50" rows="5"></textarea></td>
+  </tr>
+</table>
+<h3>Thông tin tài khoản (Bắt buộc)</h3>
+<table width="70%" border="0">
+  <tr>
+    <td width="33%" align="right">Tên truy cập:</td>
+    <td width="67%"><input type="text"></td>
+  </tr>
+  <tr>
+    <td align="right">Mật khẩu:</td>
+    <td><input type="password" name="pw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+    </td>
+  </tr>
+  <tr>
+    <td align="right">Nhập lại mật khẩu:</td>
+    <td><input type="password" name="pw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"></td>
+  </tr>
+</table>
+<h3>Các dịch vụ miễn phí(Tùy chọn)</h3>
+<table width="60%" border="0">
+  <tr>
+    <td width="39%"><input type="checkbox" name="service" checked="checked">Newletter from PressOnline(Mỗi tuần)</td>
+    <td width="61%"><input type="checkbox" name="service" checked="checked">Echip Magazine(Mỗi tuần)</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="service" checked="checked">PressOnline journaly(Mỗi tháng)</td>
+    <td><input type="checkbox" name="service" checked="checked">VietNam IT Magazine(Mỗi tháng)</td>
+  </tr>
+</table>
+<table width="30%" border="0">
+  <tr>
+    <td><input type="submit" value="Đăng ký"></td>
+    <td><input type="reset" value="Hủy bỏ"></td>
+    <td><input type="button" value="Ngừng Đăng ký" onClick="alert('Không Đăng ký thì biến đi')"></td>
+  </tr>
+</table>
+
+
+</form>
+</body>
+</html>
